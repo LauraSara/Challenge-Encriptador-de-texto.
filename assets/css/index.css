@@ -1,0 +1,212 @@
+:root {
+    --light-purple-100: #F6F0FC;
+    --light-purple-200: #ECE1FA;
+    --light-purple-300: #E0D0F8;
+    --light-purple-400: #B2A4D5;
+    --light-purple-500: #8875B2;
+
+    --dark-purple-100: #9D60D4;
+    --dark-purple-200: #7835A9;
+    --dark-purple-300: #4A0A71;
+    --dark-purple-400: #3A0761;
+    --dark-purple-500: #2C0551;
+
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+
+    --white: #F6F0FC;
+}
+
+
+body {
+    background-color: var(--light-purple-100);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
+
+}
+
+img.d-block {
+    display: block;
+}
+
+img.alura_icon {
+    margin: 40px 84px;
+}
+
+.d-none {
+    display: none;
+}
+
+section.main {
+    display: inline-block;
+    padding-left: 240px;
+}
+
+section.main p {
+    color: var(--dark-purple-500);
+    font-weight: 400;
+    width: 680px;
+    font-size: 32px;
+}
+
+section.aside {
+    position: absolute;
+    right: 72px;
+    padding: 0px 32px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    height: 80vh;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+    align-content: center;
+    display: inline-block;
+    width: 400px;
+}
+
+div.group_button {
+    position: absolute;
+    bottom: 72px;
+}
+
+button {
+    padding: 24px;
+    border-radius: 24px;
+    width: 328px;
+    cursor: pointer;
+}
+
+button#encripta_btn {
+    background-color: var(--dark-purple-500);
+    color: var(--white);
+    margin-right: 24px;
+}
+
+button#desencripta_btn,
+button#copiar_btn {
+    background-color: transparent;
+    color: var(--dark-purple-500);
+    border: 1px solid var(--dark-purple-500);
+}
+
+button#copiar_btn {
+    position: absolute;
+    bottom: 32px;
+    width: inherit;
+}
+
+textarea {
+    color: var(--dark-purple-500);
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 80px;
+    width: 577px;
+    background-color: transparent;
+    border: 0;
+}
+
+.aside_text {
+    color: var(--gray-400);
+}
+
+.mb16 {
+    margin-bottom: 16px;
+}
+
+.fz24 {
+    font-size: 24px;
+}
+
+.fz16 {
+    font-size: 16px;
+}
+
+button:hover {
+    font-weight: 700;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/* Adaptación para móviles */
+@media (max-width: 767px) {
+    img.d-block {
+        margin: 24px 16px
+    }
+
+    section.main {
+        padding: 20px;
+        text-align: center;
+    }
+
+
+
+    section.main textarea {
+        font-size: 18px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
+        background-color: transparent;
+        border: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    section.aside {
+        position: static;
+        margin: 20px;
+        padding: 20px;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: -webkit-fill-available;
+        height: auto;
+        margin-top: 64px;
+    }
+
+    section.aside img {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+
+    div.group_button {
+        position: static;
+        margin-top: 114px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 8px;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    button#encripta_btn {
+        margin-right: 0px;
+        margin-bottom: 24px;
+    }
+
+    img#image_1 {
+        display: none;
+    }
+
+
+    button#copiar_btn {
+        position: unset;
+        width: 100%;
+    }
+
+    .fz24 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .fz16 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body id="body_1">
+
+    <img class="d-block alura_icon" src="/assets/img/alura_icon.svg" alt="">
+    <section class="main">
+        <textarea name="textarea" id="ingresar_texto" placeholder="Ingrese el texto aqui" cols="50"></textarea>
+
+        <div class="group_button">
+            <div class="mb16">
+                <img src="/assets/img/alert_icon.svg" alt="">
+                Solo letras minúsculas y sin acentos
+            </div>
+            <button onclick="encriptar()" id="encripta_btn" type="button">Encriptar</button>
+            <button onclick="desencriptar()" id="desencripta_btn" type="button">Desencriptar</button>
+
+        </div>
+
+    </section>
+
+    <section class="aside">
+        <img id="image_1" src="/assets/img/image_1.svg" alt="">
+        <h3 id="salida_texto" class="fz24">Ningún mensaje fue encontrado</h3>
+        <p id="info_sin_texto" class="fz16">Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button class="d-none" onclick="copiarContenido()" id="copiar_btn" type="button">Copiar</button>
+
+    </section>
+
+    <script src="/assets/js/index.js"></script>
+
+</body>
+
+</html>
